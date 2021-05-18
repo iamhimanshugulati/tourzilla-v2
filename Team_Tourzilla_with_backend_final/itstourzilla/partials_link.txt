@@ -1,0 +1,50 @@
+<?php include '../partials/_favicon.php';?>
+
+<?php include '../partials/_dbconnect.php';?>
+<?php include '../partials/_header.php';?>
+
+
+
+<?php include '../partials/_footer.php';?>
+
+
+
+signup form
+full_name
+email_id
+contact_no
+password
+
+
+
+
+<?php 
+          $sql = "SELECT * FROM `blogs`";
+          $result = mysqli_query($conn, $sql);
+
+          // fetching data
+
+          while ($row = mysqli_fetch_assoc($result)) {
+            $blogid = $row['blog_id '];
+            $blogname = $row['blog_name'];
+            $blogmindesc = $row['blog_min_des'];
+            $blogdesc = substr($row['blog_desc'], 0, 15);
+              // substr() function is used for slicing character 3 parameter required 1st varable, 2nd start, 3rd last character
+                           
+        echo '
+    
+          <div class="card" data-aos="zoom-in">
+          <img src="../img/blogs/' . $blogname . '.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+          <h3 class="card-title">' . $blogname . '</h3>
+          <small class="text-secondary">' . $blogmindesc . '</small>
+          <p class="card-text">' . $blogdesc . '.............</p>
+          <a class="text-indigo-500 button inline-flex items-center md:mb-2 lg:mb-0 href="/itstourzilla/blog/speblog.php?catid=' . $blogid . '"">View Blogs</a>
+        </div>
+        </div>
+      ';
+
+      ?>
+
+
+

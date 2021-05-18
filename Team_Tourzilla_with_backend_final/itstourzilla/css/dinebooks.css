@@ -1,0 +1,64 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Mulish:wght@600&display=swap');
+.carousel-inner{height: 80vh;width: 100%;}
+/* .carousel-item{position: relative;} */
+/* .carousel-caption{position:absolute;left:20%;bottom:65%;color:black;font-weight: 
+	bold;font-size: 25px;} */
+/* .carousel-caption{width:100%;position:absolute;transform:translate(-50%,-50%);left:50%!important;bottom:50%!important;
+		color:black;font-weight:bold;
+	} */
+.carousel-caption h1{font-size: 2.5rem!important;font-family: 'Mulish', sans-serif !important	;font-weight: 700 !important;}	
+/* ****form***** */
+.formh1{font-size: 25px; color:black; font-weight: bold;}
+.input{color:black;font-weight: bold;}
+#form{height: 70%; width: 80%}
+.btn{width: 100%;}
+
+.dine_book .carousel-caption{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100%;
+  }
+
+
+.card img{height: 150px; margin: 10px auto; border-radius: 10px;}
+.card img{transition:1s ease all}
+.card img:hover {
+ transform: scale(0.7,0.7) !important;
+}
+
+footer .fa{
+	    border: none !important;
+    padding-top: 0px!important;
+    box-shadow: none!important;
+}
+.acord{
+	height: 100vh;width: 100%;
+}
+.card-header{position: relative;}
+.acod_menu{
+	height: 35px!important;position: absolute;left: 18px;top:-4px;
+}
+.carouselslide img{background-color:rgba(0,0,0,0.4)!important;opacity:0.7;}
+/* mediaquery for mobile */
+@media only screen and (max-width: 768px){
+	#form{margin-top:-100px !important;}
+	#accordion{margin-top: 250px;}
+	.dine_book .carousel-caption{
+		position: absolute;
+		top:40% !important;
+		left:50%!important;
+		transform:translate(-50%,-50%)!important;
+		width:100%;
+	  }
+    .small-accord{
+          margin-top:-200px!important;
+          margin-bottom:50px;
+          margin-left:20px!important;
+      }
+}
+
+
+

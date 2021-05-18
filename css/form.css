@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{background-image: url('../images/back.jpg');}
+   
+
+
+.box{
+    width:100%;
+    
+    justify-content: center;
+}
+     .form-group input{
+        border:none;
+        outline:none;
+        background: none;
+        border-bottom: 2px solid #d3d3d3;
+        width:65%;
+    }
+    .form-group::placeholder{
+        border:none !important;
+        outline:none !important;
+        background: none !important;
+        border-bottom: 2px solid #d3d3d3 !important;
+        width:60% !important;
+        margin-right: 30px;
+    } 
+.form{
+    background-color: white;
+    width: 80%;
+    height: 50%;
+    
+    
+}
+input{
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 16px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(109,93,93,0.4);
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+.form p:hover{color:red;}
+.box_2 img{
+    width: 100;
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin:0 auto;
+    width:200px;
+    height: 36px;
+    border-radius: 30px;
+    color:#fff;
+    font-size: 15px;
+    cursor: pointer; 
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
+.btn:hover{color:white;}
+.Social-icon img:hover {
+ transform: scale(1.3,1.3);
+} 
+.account{
+    position: absolute;
+    top:490px;
+    left:35%;
+    font-weight: bold;
+}  
+.account1{
+    position: absolute;
+    top:450px;
+    left:29%;
+    font-weight: bold;
+}  
+
+/* label{
+    text-transform: uppercase;
+    
+} */
+.Social-icon{margin: 10px;}
+.Social-icon img{ height: 30px;width: 30px;margin-left:px;transition:all 0.3s ease;} 
+
+
+@media only screen and (max-width: 600px) {
+    .btn{
+        display: block;
+        margin:0 auto;
+        width:200px;
+        height: 36px;
+        border-radius: 30px;
+        color:#fff;
+        font-size: 15px;
+        cursor: pointer; 
+        background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+        
+}
+.Social-icon img{ height: 30px;width: 30px; margin:4px;transition:all 0.3s ease;}
+.Social-icon{margin-right:45px;}
+.box_2 img{
+    width: 100;
+    height: 100%;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+   
+}
+.form-group input{
+    border:none;
+    outline:none;
+    background: none;
+    border-bottom: 2px solid #d3d3d3;
+    width:90%;
+}
+} 
+

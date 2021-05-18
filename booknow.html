@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<title>Booking Form HTML Template</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/booknow.css" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+</head>
+
+<body style="background-image: url('images/back.jpg');">
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row" data-aos="zoom-in">
+					<div class="booking-form">
+						<div class="form-header">
+							<h1>Make your reservation</h1>
+						</div>
+						<form>
+							<div class="form-group">
+								<input class="form-control" type="text" placeholder="Country, ZIP, city...">
+								<span class="form-label">Destination</span>
+							</div>
+							<div class="row">
+								<div class="col-md-6  col-sm-11" >
+									<div class="form-group">
+										<input class="form-control" type="date" required>
+										<span class="form-label">Check In</span>
+									</div>
+								</div>
+								<div class="col-md-6  col-sm-11">
+									<div class="form-group">
+										<input class="form-control" type="date" required>
+										<span class="form-label">Check out</span>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4  col-sm-11">
+									<div class="form-group">
+										<select class="form-control" required>
+											<option value="" selected hidden>no of rooms</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+										</select>
+										<span class="select-arrow"></span>
+										<span class="form-label">Rooms</span>
+									</div>
+								</div>
+								<div class="col-md-4  col-sm-11">
+									<div class="form-group">
+										<select class="form-control" required>
+											<option value="" selected hidden>no of adults</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+										</select>
+										<span class="select-arrow"></span>
+										<span class="form-label">Adults</span>
+									</div>
+								</div>
+								<div class="col-md-4  col-sm-11">
+									<div class="form-group">
+										<select class="form-control" required>
+											<option value="" selected hidden>no of children</option>
+											<option>0</option>
+											<option>1</option>
+											<option>2</option>
+										</select>
+										<span class="select-arrow"></span>
+										<span class="form-label">Children</span>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 col-sm-11">
+									<div class="form-group">
+										<input class="form-control" type="email" placeholder="Enter your Email">
+										<span class="form-label">Email</span>
+									</div>
+								</div>
+								<div class="col-md-6  col-sm-11">
+									<div class="form-group">
+										<input class="form-control" type="tel" placeholder="Enter you Phone">
+										<span class="form-label">Phone</span>
+									</div>
+								</div>
+							</div>
+							<div class="form-btn">
+								<button class="submit-btn">Book Now</button>
+							</div><br>
+							<center><a href="index.html" class="btn btn-lime text-white text-center mx-auto " style="background-color: lightblue;border-radius: 50px;">Back</a></center>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		$('.form-control').each(function () {
+			floatedLabel($(this));
+		});
+
+		$('.form-control').on('input', function () {
+			floatedLabel($(this));
+		});
+
+		function floatedLabel(input) {
+			var $field = input.closest('.form-group');
+			if (input.val()) {
+				$field.addClass('input-not-empty');
+			} else {
+				$field.removeClass('input-not-empty');
+			}
+		}
+	</script>
+	<script>
+		AOS.init({
+		   offset: 300, // offset (in px) from the original trigger point
+		   
+		   duration: 2000,
+		 });
+	 </script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>

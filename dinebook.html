@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Table Booking</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+  	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+	<link rel="stylesheet" href="css/dinebook.css">
+</head>
+<body>
+<div id="carouselExampleSlidesOnly" class="carouselslide" data-ride="carousel" >
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="img/368875.jpg" class="d-block w-100 img-fluid" alt="...">
+        <div class="carousel-caption  d-md-block">
+        <h1 >Find your table for any occasion</h1>
+        <p>Your Diet is a bank account<br>Good food choices for Good investments.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/ff.jpg" class="d-block w-100 img-fluid" alt="...">
+      <div class="carousel-caption  d-md-block">
+        <h1>Find your table for any occasion</h1>
+        <p>Your Diet is a bank account<br>Good food choices for Good investments.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/unnamed.jpg" class="d-block w-100 img-fluid" alt="...">
+      <div class="carousel-caption  d-md-block">
+        <h1 >Find your table for any occasion</h1>
+        <p>Your Diet is a bank account<br>Good food choices for Good investments.</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- strat form -->
+<div class ="container">
+	<div class="row acord">
+		<div class="col-md-6 col-sm-11 mx-auto mb-5" id="form" >
+	<center>
+		<h1 class="formh1 mt-5 pb-5">Please Select your Booking Details</h1></center>
+<form>
+  <div class="row" >
+        <div class="form-group col-md-4" >
+      <center><label class="input" for="date">Select Date</label></center>
+      <select id="Date" class="form-control">
+        <option selected>choose</option>
+        <option>Thu-23-jul</option>
+        <option>Fri-24-jul</option>
+        <option>Sat-25-jul</option>
+        <option>Sun-26-jul</option>
+        <option>Mon-27-jul</option>
+        <option>Tues-28-jul</option>
+      </select>
+    </div>
+
+        <div class="form-group col-md-4">
+      <center><label class="input" for="inputState">Select Guest</label></center>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+      </select>
+    </div>
+
+        <div class="form-group col-md-4">
+      <center><label class="input" for="inputState">Select Session</label></center>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>Breakfast</option>
+        <option>Lunch</option>
+        <option>Dinner</option>
+      </select>
+    </div>
+  </div>
+  <form>
+  <div class="row">
+
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+ </div><br>
+ <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Email Id">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Mobile Number">
+    </div>
+</div><br>
+<div class="form-group">
+    <center><label class="input" for="exampleFormControlTextarea1">Additional requests</label></center>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+   <center><button class="btn btn-warning" type="submit">Book</button></center>
+
+</form>
+</form>
+</div>
+
+<!-- accordion -->
+
+
+
+<div class="col-md-6 col-sm- mt-5">
+	<div id="accordion">
+
+  <div class="card">
+    <div class="card-header">
+      <a class="card-link" data-toggle="collapse" href="#collapseOne">
+      	<span><img src="img/dinner.png" class="img-fluid acod_menu"></span><span class="ml-4 font-weight-bolder">&nbsp;&nbsp;&nbsp;SPECIAL DISHES </span>
+          
+
+<!-- accordion -->
+      </a>
+    </div>
+    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+      <div class="card-body mx-auto">
+       <center>
+       	<div class="row ">
+       		<div class="col-md-6 col-sm-11">
+       	<img src="img/368875.jpg" class="card-img-top img-fluid" alt="..."></div>
+       	<div class="col-md-6 col-sm-11">
+        <img src="img/ff.jpg" class="card-img-top img-fluid" alt="..."></div>
+    </div></center>
+       <center>
+       	<div class="row ">
+       	<div class="col-md-6 col-sm-11"> 
+       	<img src="img/tt.jpg" class="card-img-top img-fluid" alt="..."></div>
+       	<div class="col-md-6 col-sm-11"> 
+        <img src="img/food.jpg" class="card-img-top img-fluid" alt="..."></div>
+    </div></center>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed card-link menuimg" data-toggle="collapse" href="#collapseTwo"> 
+       <span><img src="img/menu.png" class="img-fluid acod_menu"></span><span class="ml-4 font-weight-bolder">&nbsp;&nbsp;&nbsp;MENU</span>
+    </div>
+    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+      <div class="card-body  mx-auto">
+    <center>
+       	<div class="row menu">
+       		<div class="col-md-4 col-sm-11">
+       			<h3 style="color:red; font-weight: bold;">Breakfast</h3>
+       	<img src="img/breakf.jpg" class="card-img-top img-fluid" alt="..."></div>
+       	    <div class="col-md-4 col-sm-11">
+       	    	<h3 style="color:red; font-weight: bold;">Lunch</h3>
+        <img src="img/lunch.jpg" class="card-img-top img-fluid" alt="..."></div>
+            <div class="col-md-4 col-sm-11">
+            	<h3 style="color:red; font-weight: bold;">Dinner</h3>
+        <img src="img/dinner.jpg" class="card-img-top img-fluid" alt="..."></div>
+        </div>
+	</center>
+      </div>
+    </div>
+  </div>
+
+  
+
+</div>
+</div>
+</div>
+
+
+  </div>
+
+
+<!--End accordion -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- ***********script**************** -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+         offset: 300, // offset (in px) from the original trigger point
+         
+         duration: 2000,
+       });
+   </script>
+</body>
+</html>

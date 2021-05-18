@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel booking</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/travelbook.css">
+  
+  <link rel="stylesheet" href="css/monument.css">
+  <style>
+    .scrolled{
+      background-color: rgba(0,0,0,0.3)!important;
+
+    }
+    .headtext h1:hover{color:yellow; cursor: pointer;}
+    nav{
+      transition: 0.45s ease-in all!important;
+    }
+    header{background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('img/taj.jpg');
+    background-size: 100% 100%;height: 98vh;z-index: -99;
+    /* background-blend-mode:multiply;
+    background-color:rgb(79, 82, 241); */
+  }
+  </style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light  fixed-top">
+  <div class="container">
+    <a class="navbar-brand animate__animated animate__heartBeat  animate__infinite " href="index.html">TOURZILLA</a>
+      <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="index.html" >Home</a>
+      </li>
+      <li class="nav-item dropdown text-white">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown"
+         role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Services
+        </a>
+        <div class="dropdown-menu bg-primary text-center" aria-labelledby="navbarDropdown"> 
+          <a class="dropdown-item" href="hotel.html">Hotel</a>
+          <a class="dropdown-item" href="Dinein.html">Dine-In</a>
+          <a class="dropdown-item" href="Explore.html">Explore</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="team.html">Team</a>
+      </li>  
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li> 
+      
+    </ul>
+   
+  </div>  
+  </div>
+</nav>
+<!-- ~~~~~~~~~~~~~navbar end~~~~~~~~~~~~~~~~~ -->
+<!-- ~~~~~~~~~~~~~~~~header start ~~~~~~~~~~~~~~~~ -->
+<header class="container-fluid header">
+    <br><br><br>
+	<div class="headtext mt-5">
+
+		<h1 class="text-white ">Plan Your Trip</h1>
+    <p class="text-center ">“Traveling – it leaves you speechless, then turns you into a storyteller.”</p>
+    
+	</div>
+
+</header>
+
+<!-- ~~~~~~~~~~~~~~~~header end ~~~~~~~~~~~~~~~~ -->
+<!-- ............form.................. -->
+<div class="container" style="padding: 50px 15px;">
+    <div class="row">
+      <div class="col-md-12">
+       
+      <p><b>Get Travel Assistance from Several ASTA Travel Advisors</b><br/>
+ Maybe you need help with vacation planning, honeymoon travel, tour packages, Europe trip quotes? Whatever your need, we can help! Not sure which travel advisor to select. No worries. 
+
+        <br><br>
+Receive multiple replies for from ASTA (American Society of Travel Advisors) travel advisors. You are in control. Select how many advisors you want to get replies from and how long you want your request to be active.  Serious requests only, please. 
+</p>
+
+        
+      </div>
+    </div>
+    <br><br>
+        <h6>* All fields are required</h6>
+<form id="requestQuote" class="tripquote">
+  <fieldset>
+      <div class="row">
+
+        <div class="form-group col-md-4"><label for="travelNameFirst">First Name</label>
+        <input class="form-control" name="travelNameFirst" type="text" placeholder="Your First Name" required /></div>
+
+          <div class="form-group col-md-4"><label for="travelNameLast">Last Name</label>
+              <input class="form-control" name="travelNameLast" type="text" placeholder="Your Last Name" required /></div>
+
+          <div class="form-group col-md-4"><label for="telephone">Telephone</label>
+         <input class="form-control" name="telephone" type="text" placeholder="Telephone" required /></div>
+
+      </div>
+
+
+      <div class="row">
+
+          <div class="form-group col-md-6"><label for="city">City</label>
+              <input class="form-control" name="city" type="text" placeholder="Your City" required /></div>
+
+          <div class="form-group col-md-1"><label for="state">State</label>
+              <input class="form-control" name="state" type="text" placeholder="ST" required /></div>
+
+          <div class="form-group col-md-2"><label for="zip">Zip Code</label>
+              <input class="form-control" name="zip" type="text" placeholder="Your Zip Code" required /></div>
+
+          <div class="form-group col-md-3"><label for="country">Country</label>
+              <input class="form-control" name="country" type="text" placeholder="Country"  required  /></div>
+
+
+      </div>
+      <div class="row">
+          <div class="form-group col-md-12"><label for="quoteEmail">Email address</label>
+              <input id="email" class="form-control" name="quoteEmail" required type="email" placeholder="Enter email" aria-describedby="emailHelp" />
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small></div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+          <div class="form-group col-md-3"><label for="travalers">Number of people</label>
+              <input class="form-control" type="number" name="travelers" required min='1' value="1"/></div>
+
+          <div class="form-group col-md-6"><label for="travelType">Type of Travel</label>
+              <input class="form-control" name="travelType" type="text" placeholder="Type of Travel" required /></div>
+          <div class="form-group col-md-3"><label for="budget">Budget estimate</label>
+              <input id="budget" class="form-control" name="budget" type="text" required /></div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+
+        <div class="form-group col-md-3"><label for="travelFromCity">Travel From</label>
+        <input class="form-control" type="text" name="travelFromCity" placeholder="From City"  required  /></div>
+
+        <div class="form-group col-md-3"><label for="travelFromState">&nbsp;</label>
+        <input class="form-control" type="text" name="travelFromState" placeholder="From State"  required  /></div>
+
+          <div class="form-group col-md-3"><label for="travelFromCountry">&nbsp;</label>
+              <input class="form-control" type="text" name="travelFromCountry" placeholder="From Country"  required  /></div>
+
+          <div class="form-group col-md-3"><label for="travelFromRegion">&nbsp;</label>
+              <input class="form-control" type="text" name="travelFromRegion" placeholder="From Region"  required  /></div>
+
+      </div>
+
+      <hr>
+
+      <div class="row">
+
+         <div class="form-group col-md-3"><label for="travelPlaceCity">Travel To</label>
+         <input class="form-control" type="text" name="travelPlaceCity" placeholder="To City"  required  /></div>
+
+         <div class="form-group col-md-3"><label for="travelPlaceState">&nbsp;</label>
+         <input class="form-control" type="text" name="travelPlaceState" placeholder="To State"  required  /></div>
+
+         <div class="form-group col-md-3"><label for="travelPlaceCountry">&nbsp;</label>
+         <input class="form-control" type="text" name="travelPlaceCountry" placeholder="To Country"  required  /></div>
+
+         <div class="form-group col-md-3"><label for="travelPlaceRegion">&nbsp;</label>
+         <input class="form-control" type="text" name="travelPlaceRegion" placeholder="To Region" required   /></div>
+
+      </div>
+
+      <hr>
+
+
+      <div class="form-group" id="Traveldates">
+      <div  id="travelStart">
+        <div class="form-group"><label for="request">Start Date</label></div>
+        <div class="input-group date">
+           <input type="text" class="form-control" name="startDate" id="startDate" required><div class="input-group-addon"><span class="iconic iconic-calendar" title="calendar"  aria-hidden="true"></span></div>
+        </div>
+      </div>
+      <div  id="travelEnd">
+        <div class="form-group"><label for="request">End Date</label></div>
+          <div class="input-group date">
+            <input type="text" class="form-control" name="endDate" id="endDate" required><span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+          </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea id="description" class="form-control" name="description"  required rows="3"></textarea>
+     </div>
+<!--<div class="form-group"><label>How long will the request stay public?</label></div>-->
+    <div class="form-group">
+      <label for="request">How long will the request stay public?</label>
+      <div class="form-check form-check-inline"><input required class="form-check-input" name="request" type="radio" value="30" />
+      <label class="form-check-label" for="inlineRadio2">30 Days</label></div>
+      <div class="form-check form-check-inline"><input required class="form-check-input" name="request" type="radio" value="60" />
+      <label class="form-check-label" for="inlineRadio2">60 Days</label></div>
+      <div class="form-check form-check-inline"><input required class="form-check-input" name="request" type="radio" value="90" />
+      <label class="form-check-label" for="inlineRadio2">90 Days</label></div>
+    </div>
+    <div class="form-group">
+       <label>Maximum Number of Responses You'd Like to Receive <sup>*</sup></label>
+        <div class="form-check form-check-inline"><input required class="form-check-input" name="response" type="radio" value="3" />
+      <label class="form-check-label" for="inlineRadio2">3</label></div>
+      <div class="form-check form-check-inline"><input required class="form-check-input" name="response" type="radio" value="5" />
+      <label class="form-check-label" for="inlineRadio2">5</label></div>
+      <div class="form-check form-check-inline"><input required class="form-check-input" name="response" type="radio" value="10" />
+      <label class="form-check-label" for="inlineRadio2">10</label></div>
+    </div>
+      <div class="form-group">
+          <label>Is airfare needed to be included?</label>
+          <div class="form-check form-check-inline"><input required class="form-check-input" name="airFare" type="radio" value="true" />
+              <label class="form-check-label" for="inlineRadio2">Yes</label></div>
+          <div class="form-check form-check-inline"><input required class="form-check-input" name="airFare" type="radio" value="false" />
+              <label class="form-check-label" for="inlineRadio2">No</label></div>
+      </div>
+    <button class="btn btn-primary" type="submit">Book Now</button>
+  </fieldset>
+</form>
+</div>
+<!-- .................form-end............ -->
+
+<!-- ........footer start.......... -->
+<footer class="footer text-white mt-2 p-1 pt-3">
+        <center>
+            <p><a href="https://www.facebook.com" target="_blank"><i
+                        class="animate__animated  animate__zoomIn  animate__infinite fa fa-facebook text-primary fa-2x ml-3"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i
+                        class=" animate__animated  animate__zoomIn  animate__infinite fa fa-instagram text-danger fa-2x ml-3"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class=" animate__animated  animate__zoomIn  animate__infinite
+                  fa fa-twitter text-info fa-2x ml-3"></i></a>
+                <a href="https://in.linkedin.com" target="_blank"><i
+                        class="animate__animated  animate__zoomIn  animate__infinite
+                        fa fa-linkedin text-primary fa-2x ml-3"></i></a>
+            </p>
+            <h5 class="text-center">Copyright © 2020, Designed by <a href="/mytourzilla"
+                    class="tourcolor font-weight-bolder text-decoration-none text-link footfontsize"
+                    rel="noopener noreferrer" target="_blank" class="text-center text-warning">Tour<span
+                        class="zillacolor">Zilla</span></a> Team — <a href="http://www.drinkingcode.tech"
+                    class="zillacolor font-weight-bolder text-decoration-none text-link footfontsize"
+                    rel="noopener noreferrer" target="_blank" class="text-center text-warning">@drinkingcode.tech</a>
+            </h5>
+        </center>
+
+    </footer>
+    <!-- ...........footer end........... -->
+<!-- js files -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+        $(window).scroll(function(){
+            $('nav').toggleClass('scrolled',$(this).scrollTop()>400);
+        });
+    </script>
+     <script>
+        AOS.init({
+           offset: 300, // offset (in px) from the original trigger point
+           
+           duration: 2000,
+         });
+     </script>
+</body>
+</html>

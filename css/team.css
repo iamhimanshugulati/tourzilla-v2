@@ -1,0 +1,50 @@
+ .team{
+    background: url('../img/team_bg.jpg');
+    height: 100vh;
+    width:100%;
+    background-attachment: fixed;
+    background-color: #079bf3;
+   background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-position: center center;
+    margin-top:-25px;
+    z-index: -1;
+    position: relative;
+}
+section .team_header{
+    
+    
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width: 100%;
+}
+section .team_header h1{
+    font-size: 5vw;
+    text-align: center;
+    color:white;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px black;
+}
+.social-icons .fa{font-size: 25px;color:#079bf3;transition: all 0.3s ease; height: 50px;width:50px; border-radius: 50%;border: 1px solid #d3d3d3;padding: 12px;}
+.social-icons .fa:hover{
+    color:white;
+    transform:translateY(-15px);
+    background-color:#079bf3 ;
+    filter: grayscale(0);
+    
+}
+section{background:url('../img/email-pattern.png');}
+.zoom {
+    padding: 10px;
+    background-color: #079bf3 ;
+    transition: transform .2s; /* Animation */
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.1);

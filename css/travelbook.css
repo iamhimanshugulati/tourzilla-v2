@@ -1,0 +1,21 @@
+.headtext p{
+
+    font-size: 20px!important;
+    text-shadow: 0px 0px 2px black;
+
+}
+.headtext h1{
+
+    font-size: 2.5rem!important;
+    
+
+}
+.header{
+    background-attachment: fixed;
+}
+.header{
+    position: relative;
+}
+.headtext{position: absolute;top: 50%!important;left:50%;margin-top: 100px; transform:translate(-50%,-50%)!important;
+    width: 100%;color:white;margin-top: 300px;}
+    label{color:black!important;}

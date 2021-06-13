@@ -543,6 +543,20 @@
       
     </script>
     
+    <script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "88156f20-f453-43fd-91dc-8a91650fbcd2", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "5e83558b-598e-4edf-a3ec-cbe71e8b8cd1", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+    
 </body>
 
 </html>
